@@ -168,6 +168,14 @@ namespace myhelloworld
 
             // Write code to get just the drive letter, in uppercase.
             //Console.WriteLine(pathFile.ToUpper());
-        }
+
+            // SPLITTING 
+            // Declare string x and initialize it to whatever you like. 
+            //string x = "Enrique";
+            // Make sure the string has spaces in it.
+            // Split the string on space and observe the results
+        //    string[] spaces = x.Split(' ');
+        //    Console.WriteLine(spaces);      
+        //}
     }
 }
