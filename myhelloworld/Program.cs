@@ -7,6 +7,11 @@ namespace myhelloworld
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            // Sinlge line comment test
+            /* Multi line 
+             * comment
+             * block */
         }
     }
 }
