@@ -25,6 +25,15 @@ namespace myhelloworld
             string test4 = "Gladys";
 
             Console.WriteLine($"This is a bool: {test}, an int: {test1}, a double: {test2}, a char: {test3}, a string: {test4}");
+
+            // MIN MAX VALUES 
+            int checkMaxValue = int.MaxValue;
+            int checkMinValue = int.MinValue;
+            // increment will convert it to min value
+            checkMaxValue++;
+
+            Console.WriteLine(checkMaxValue);
+            Console.WriteLine(checkMinValue);
         }
     }
 }
