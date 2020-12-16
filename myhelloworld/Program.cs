@@ -174,8 +174,25 @@ namespace myhelloworld
             //string x = "Enrique";
             // Make sure the string has spaces in it.
             // Split the string on space and observe the results
-        //    string[] spaces = x.Split(' ');
-        //    Console.WriteLine(spaces);      
-        //}
+            // string[] spaces = x.Split(' ');
+            // Console.WriteLine(spaces);    
+
+            // FORMATTING 
+            // Create a const string x that contains formatting tokens
+            //const string x = "I am {0} and I will be joining {1} for the Cohort {2}";
+
+            //const string name = "Gladys";
+            //const string company = "Microsoft";
+            //const int number = 23;
+            // Create another string y that uses string.Format to insert values into string x
+            //string y = string.Format(x, name, company, number);
+            // Print string y
+            //Console.WriteLine(y);
+            // Create a double d and initialize it to a number with > 2 decimal places.
+            //double d = 93.11;
+            // Print the double, but only include 2 decimals when printing
+           
+
+        }
     }
 }
