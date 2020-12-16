@@ -34,6 +34,15 @@ namespace myhelloworld
 
             Console.WriteLine(checkMaxValue);
             Console.WriteLine(checkMinValue);
+
+            // IMPLICIT TYPES 
+            var a = false;
+            var b = 123;
+            var c = 12.54;
+            var d = 'e';
+            var e = "Hi";
+
+            Console.WriteLine(b.GetType());
         }
     }
 }
