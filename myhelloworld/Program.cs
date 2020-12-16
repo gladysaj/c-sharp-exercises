@@ -8,13 +8,21 @@ namespace myhelloworld
     /// </summary>
     
     // ENUM 
-    enum Sports
-    {
-        Boxing, 
-        Gymnastics = 5, 
-        Spinning,
-        Soccer = 20
-    }
+    //enum Sports
+    //{
+    //    Boxing, 
+    //    Gymnastics = 5, 
+    //    Spinning,
+    //    Soccer = 20
+    //}
+
+    // STRUCTS
+    //public struct Books
+    //{
+    //    public string bookName;
+    //    public string author;
+    //    public double price;
+    //}
 
     class Program
     {
@@ -235,7 +243,29 @@ namespace myhelloworld
             //int secondSportAsInteger = (int) secondSport;
             //Console.WriteLine($"{secondSportAsInteger}");
 
+            // STRUCTS
+            // Create a struct inside the HelloWorld namespace, but outside of the Program class
+            // Call the struct whatever you like and add some members to it
+            // Declare a variable x and instantiate the struct
+            // Declare a variable y and instantiate the struct
+            // Set every member in x to the values of every member in y
+            // Print the members of x
 
-        }
+            //var x = new Books();
+
+            //x.bookName = "Outliers";
+            //x.author = "Malcom Gladwell";
+            //x.price = 17.99;
+
+            //Console.WriteLine($"This is a struct= book name: {x.bookName}, author: {x.author}, price: {x.price}");
+
+            //var y = new Books();
+
+            //y.bookName = "The miracle morning";
+            //y.author = "Hal Elrod";
+            //y.price = 12.99;
+
+
+    }
     }
 }
