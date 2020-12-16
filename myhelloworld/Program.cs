@@ -99,12 +99,17 @@ namespace myhelloworld
 
             // STRINGS
             // Create a string with escape sequences in it and print it out
-           // Console.WriteLine("This is adding a new line\n escape\t sequence");
+            // Console.WriteLine("This is adding a new line\n escape\t sequence");
             //Console.WriteLine("This is a url: c:\\myFolder\\test");
 
             // Create a literal string and print it out
             //Console.WriteLine(@"This is a path: c:myFolder\dontNeedDoubleSlash");
 
+            // Concatenation 
+            // Concatenate two strings together and print them out
+            //string name = "Gladys";
+            //string lastName = "Alvarez";
+            //Console.WriteLine(name + lastName);
         }
     }
 }
