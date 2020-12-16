@@ -110,6 +110,12 @@ namespace myhelloworld
             //string name = "Gladys";
             //string lastName = "Alvarez";
             //Console.WriteLine(name + lastName);
-        }
+
+            // Length
+            // Print a string along with its length
+        //    string user = "gladyscodes";
+        //    int userLength = user.Length;
+        //    Console.WriteLine($"The length of that word is {userLength}");
+        //}
     }
 }
