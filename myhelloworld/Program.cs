@@ -132,6 +132,18 @@ namespace myhelloworld
             // string name = "Gladys";
             // Console.WriteLine(name.ToUpper());
             // Console.WriteLine(name.ToLower());
+
+            // Getting parts of strings 
+            /* Create a string with length > 3.
+               Print the string with both the first and last characters removed.
+               Make sure your code still works if you change the string size.
+               Repeat the above exercise using a different string method.*/
+               //string animal = "dolphin";
+               //string sub1 = animal.Substring(1, animal.Length - 2);
+               //string remFirtsLetter = animal.Remove(0,1);
+               //string finalWord = remFirtsLetter.Remove(remFirtsLetter.Length -1, 1);
+               //Console.WriteLine($"Using Substring() = {sub1}");
+               //Console.WriteLine($"Using Remove() = {finalWord}");
         }
     }
 }
