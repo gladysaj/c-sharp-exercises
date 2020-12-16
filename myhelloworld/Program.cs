@@ -77,25 +77,33 @@ namespace myhelloworld
             // Write an expression that rounds a double to 3 decimal places and store the result in a double.
 
             // TYPE CONVERSIONS
-            int x = 34;
-            int y = 89;
-            int z = 45;
+            //int x = 34;
+            //int y = 89;
+            //int z = 45;
 
-            double a = 23.343;
-            double b = 87.6565;
-            double c = 32.12;
+            //double a = 23.343;
+            //double b = 87.6565;
+            //double c = 32.12;
 
             // Store the integers in the doubles
-            double x1 = x;
-            double y1 = y;
-            double z1 = z;
-            Console.WriteLine($"Integers to doubles: {x1}, {y1}, {z1}");
+            //double x1 = x;
+            //double y1 = y;
+            //double z1 = z;
+            //Console.WriteLine($"Integers to doubles: {x1}, {y1}, {z1}");
 
             // Store the doubles in the integers - this requires a cast operator 
-            int a1 = (int)a;
-            int b1 = (int)b;
-            int c1 = (int)c;
-            Console.WriteLine($"Doubles to integers: {a1}, {b1}, {c1}");
+            //int a1 = (int)a;
+            //int b1 = (int)b;
+            //int c1 = (int)c;
+            //Console.WriteLine($"Doubles to integers: {a1}, {b1}, {c1}");
+
+            // STRINGS
+            // Create a string with escape sequences in it and print it out
+           // Console.WriteLine("This is adding a new line\n escape\t sequence");
+            //Console.WriteLine("This is a url: c:\\myFolder\\test");
+
+            // Create a literal string and print it out
+            //Console.WriteLine(@"This is a path: c:myFolder\dontNeedDoubleSlash");
 
         }
     }
