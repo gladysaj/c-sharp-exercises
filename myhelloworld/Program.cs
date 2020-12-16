@@ -191,8 +191,26 @@ namespace myhelloworld
             // Create a double d and initialize it to a number with > 2 decimal places.
             //double d = 93.11;
             // Print the double, but only include 2 decimals when printing
-           
 
+
+            // PRINTING AND PARSING 
+            // Create bool a, int b, double c, and char d, and initialize them to whatever you want (other than default values).
+            //bool a = true;
+            //int b = 123;
+            //double c = 11.93;
+            //char d = 'g';
+            // Convert these types to strings w, x, y, and z.
+            //string w = a.ToString();
+            //string x = b.ToString();
+            //string y = c.ToString();
+            //string z = d.ToString();
+            //Console.WriteLine($"Using ToString() = {w}, {x}, {y}, {z} ");
+            // Create bool e, int f, double g, and char h. Use the appropriate Parse() method to initialize these variables from the strings w, x, y, and z.
+            //bool e = bool.Parse(w);
+            //int f = int.Parse(x);
+            //double g =  double.Parse(y);
+            //char h = char.Parse(z);
+            //Console.WriteLine($"Using Parse() = {e}, {f}, {g}, {h}");
         }
     }
 }
