@@ -113,9 +113,19 @@ namespace myhelloworld
 
             // Length
             // Print a string along with its length
-        //    string user = "gladyscodes";
-        //    int userLength = user.Length;
-        //    Console.WriteLine($"The length of that word is {userLength}");
-        //}
+            //string user = "gladyscodes";
+            //int userLength = user.Length;
+            //Console.WriteLine($"The length of that word is {userLength}");
+
+            //Indexing 
+            // Create a string with length > 3 with an odd number of characters.
+            // string hobbies = "boxing";
+            // Print the first, middle, and last character, concatenated together.
+            // char first = hobbies[0];
+            // char middle = hobbies[2];
+            // char last = hobbies[hobbies.Length - 1];
+
+            // Console.WriteLine($"First char: {first}, middle char: {middle}, last char: {last}");
+        }
     }
 }
