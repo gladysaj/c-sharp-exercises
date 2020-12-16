@@ -43,6 +43,15 @@ namespace myhelloworld
             var e = "Hi";
 
             Console.WriteLine(b.GetType());
+
+            // OPERATORS
+            int x = 93;
+            int y = 11;
+            // only that remains on 93
+            int z1 = x++; 
+            int z2 = ++y;
+
+            Console.WriteLine($"This is x:{x}, y:{y}, z1:{z1}, z2:{z2}");
         }
     }
 }
