@@ -6,6 +6,16 @@ namespace myhelloworld
     /// This is an XML documentation comment
     /// This class performs an important function
     /// </summary>
+    
+    // ENUM 
+    enum Sports
+    {
+        Boxing, 
+        Gymnastics = 5, 
+        Spinning,
+        Soccer = 20
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -211,6 +221,21 @@ namespace myhelloworld
             //double g =  double.Parse(y);
             //char h = char.Parse(z);
             //Console.WriteLine($"Using Parse() = {e}, {f}, {g}, {h}");
+
+            // ENUMS 
+            // Create an enum inside the HelloWorld namespace, but outside of the Program class
+            //Call the enum whatever you like, populate it with whatever names and values you like
+            // Declare a variable and assign it to one of the enum values.
+            // Using the variable, print both the enum name AND the enum value
+            //var favoriteSport = Sports.Boxing;
+            //Console.WriteLine($"{favoriteSport}");
+
+            // Convert the enum to int
+            //var secondSport = Sports.Gymnastics;
+            //int secondSportAsInteger = (int) secondSport;
+            //Console.WriteLine($"{secondSportAsInteger}");
+
+
         }
     }
 }
