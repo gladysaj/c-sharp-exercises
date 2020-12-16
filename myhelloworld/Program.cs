@@ -138,12 +138,36 @@ namespace myhelloworld
                Print the string with both the first and last characters removed.
                Make sure your code still works if you change the string size.
                Repeat the above exercise using a different string method.*/
-               //string animal = "dolphin";
-               //string sub1 = animal.Substring(1, animal.Length - 2);
-               //string remFirtsLetter = animal.Remove(0,1);
-               //string finalWord = remFirtsLetter.Remove(remFirtsLetter.Length -1, 1);
-               //Console.WriteLine($"Using Substring() = {sub1}");
-               //Console.WriteLine($"Using Remove() = {finalWord}");
+            //string animal = "dolphin";
+            //string sub1 = animal.Substring(1, animal.Length - 2);
+            //string remFirtsLetter = animal.Remove(0,1);
+            //string finalWord = remFirtsLetter.Remove(remFirtsLetter.Length -1, 1);
+            //Console.WriteLine($"Using Substring() = {sub1}");
+            //Console.WriteLine($"Using Remove() = {finalWord}");
+
+            // Searching
+            // Declare strings x and char y and initialize them to whatever you like.
+            //string x = "coding";
+            //char y = 'i';
+
+            // Write an expression that returns the index of the first occurrence of char y in string x
+            //int firstIndex = x.IndexOf(y);
+            //Console.WriteLine($"First occurrence of char y is: {firstIndex}");
+
+            // Write an expression that returns a bool that represents if y is anywhere in string x
+            //bool checkValue = x.Contains(y);
+            //Console.WriteLine(checkValue);
+
+            // Create a literal string that holds a fake path to a file (@”c:\foo\bar.txt”, for example).
+            //string pathFile = @"Fake path to file c:\foo\bar.txt";
+            //Console.WriteLine(pathFile);
+
+            // Write code to get just the file name (no path), without the extension.
+            //string[] splitPath = pathFile.Split('c');
+            //Console.WriteLine($"Get the file name: {splitPath}");
+
+            // Write code to get just the drive letter, in uppercase.
+            //Console.WriteLine(pathFile.ToUpper());
         }
     }
 }
