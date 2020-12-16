@@ -126,6 +126,12 @@ namespace myhelloworld
             // char last = hobbies[hobbies.Length - 1];
 
             // Console.WriteLine($"First char: {first}, middle char: {middle}, last char: {last}");
+
+            // Changing case 
+            // Print a string, the same string in all uppercase, and the same string in all lowercase
+            // string name = "Gladys";
+            // Console.WriteLine(name.ToUpper());
+            // Console.WriteLine(name.ToLower());
         }
     }
 }
