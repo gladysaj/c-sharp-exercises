@@ -265,7 +265,20 @@ namespace myhelloworld
             //y.author = "Hal Elrod";
             //y.price = 12.99;
 
+            // CONSOLE I/O
+            // Create a program that prompts the user for their first name, then middle name, then last name, all on different lines.
+            // Print the first, middle, and last name all on the same line
+            // Print “Press any key to exit…” and wait for the user to press a key to exit.
 
-    }
+            //Console.Write("Please enter your name: ");
+            //var name = Console.ReadLine();
+            //Console.Write("Please enter your middle name: ");
+            //var middleName = Console.ReadLine();
+            //Console.Write("Please enter your last name: ");
+            //var lastName = Console.ReadLine();
+
+            //Console.WriteLine($" Welcome! {name} {middleName} {lastName}");
+            //Console.WriteLine("Press any key to exit");
+        }
     }
 }
