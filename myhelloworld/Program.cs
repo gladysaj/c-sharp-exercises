@@ -24,6 +24,15 @@ namespace myhelloworld
     //    public double price;
     //}
 
+    // COMMAND LINES ARG
+    //enum Direction
+    //{
+    //    Up, 
+    //    Down, 
+    //    Left, 
+    //    Right
+    //}
+
     class Program
     {
         static void Main(string[] args)
@@ -80,18 +89,21 @@ namespace myhelloworld
             //int g = num1 * num2;
             //int h = num2 / num1;
 
+            // CHECK THIS ONE!
             // Write an expression that returns true if x is even, and false if x is odd. Store the result of the expression in a bool.
+            //bool isEven = true;
+
             //if (num % 2 == 0)
             //{
-            //    Console.WriteLine($"Number: {num} is even");
+            //   Console.WriteLine($"Number: {num} is even = {isEven}");
             //}
             //else 
             //{
             //    Console.WriteLine($"Number: {num} is odd");
             //}
-
+            // CHECK THIS ONE!
             // Write an expression that returns false if y is divisible by 3. Store the result of the expression in a bool
-
+            // CHECK THIS ONE!
             // Write an expression that rounds a double to 3 decimal places and store the result in a double.
 
             // TYPE CONVERSIONS
@@ -180,20 +192,22 @@ namespace myhelloworld
             //string pathFile = @"Fake path to file c:\foo\bar.txt";
             //Console.WriteLine(pathFile);
 
+            //CHECK THIS ONE!!
             // Write code to get just the file name (no path), without the extension.
-            //string[] splitPath = pathFile.Split('c');
-            //Console.WriteLine($"Get the file name: {splitPath}");
+            // string[] splitPath = pathFile.Split('c');
+            // Console.WriteLine($"Get the file name: {splitPath}");
 
+            // CHECK THIS ONE!!
             // Write code to get just the drive letter, in uppercase.
             //Console.WriteLine(pathFile.ToUpper());
 
             // SPLITTING 
             // Declare string x and initialize it to whatever you like. 
-            //string x = "Enrique";
+            // string x = "Enrique";
             // Make sure the string has spaces in it.
             // Split the string on space and observe the results
-            // string[] spaces = x.Split(' ');
-            // Console.WriteLine(spaces);    
+            // string[] nameWithSpaces = x.Split(' ');
+            // Console.WriteLine(nameWithSpaces);    
 
             // FORMATTING 
             // Create a const string x that contains formatting tokens
@@ -208,6 +222,8 @@ namespace myhelloworld
             //Console.WriteLine(y);
             // Create a double d and initialize it to a number with > 2 decimal places.
             //double d = 93.11;
+
+            // CHECK THIS ONE!!
             // Print the double, but only include 2 decimals when printing
 
 
@@ -279,6 +295,29 @@ namespace myhelloworld
 
             //Console.WriteLine($" Welcome! {name} {middleName} {lastName}");
             //Console.WriteLine("Press any key to exit");
+
+            // COMMAND LINE ARGUMENTS 
+            // Create an enum called Direction with the values: Up, Down, Left, and Right
+
+            // CHECK THIS ONE!!
+            // Create a program that expects three arguments – a Direction, a bool, and an int.
+
+            // If the program is called with no arguments OR called with one argument of “/?”,
+            // print a help message explaining what arguments are expected with an example of a valid command line.
+            // If either of the first two arguments are missing, print an error message. The third argument is optional
+            // Store the arguments in variables of the appropriate type
+            // If any value can’t be stored correctly, print an error message
+            // Print the variables stored in step 3. Make sure to include the int if it was specified
+
+            // VISUAL STUDIO ARGUMENTS 
+            // Test the code above by passing in arguments through visual studio
+            // SOLUTION: go to the sol explorer right click on the application name and go to properties
+            // Console.WriteLine("There are " + args.Length + " arguments");
+            // var argsStr = string.Join(" ", args);
+            // Console.WriteLine("The args are: " + argsStr);
+
+            // COMMAND LINE ARGUMENTS
+            // Test the code above by passing in arguments directly on the command line
         }
     }
 }

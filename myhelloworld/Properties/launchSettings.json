@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "myhelloworld": {
+      "commandName": "Project",
+      "commandLineArgs": "Direction, bool, int"
+    }
+  }
+}
