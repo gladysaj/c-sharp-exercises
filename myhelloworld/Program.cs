@@ -16,6 +16,13 @@ namespace myhelloworld
     //    Soccer = 20
     //}
 
+    enum Food
+    {
+        Chinese,
+        Mexican,
+        Thai
+    }
+
     // STRUCTS
     //public struct Books
     //{
@@ -346,6 +353,35 @@ namespace myhelloworld
             //{
             //    Console.WriteLine($"Value {y} is greater than 100");
             //}
+
+            // SWITCH
+            // Create an enum type. Name it whatever you like and populate it with whatever values you like.
+            // Write a switch statement that checks each value of the enum and does something for each match.
+
+            // var food = Food.Mexican; // this is the one displayed
+            
+            //switch (food)
+            //{
+            //    case Food.Chinese:
+            //        Console.WriteLine("I like Chinese food");
+            //        break;
+
+                // Include one case that falls through to the next case.
+                //case Food.Thai:
+                //case Food.Mexican:
+                //    Console.WriteLine("I love the Mexican food!");
+                //    break;
+
+                //case Food.Thai:
+                //    Console.WriteLine("Loving Thai food");
+                //    break;
+
+                //default:
+                //    Console.WriteLine("The food is invalid");
+                //    break;
+
+            }
+
         }
     }
 }
