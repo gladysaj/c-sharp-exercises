@@ -388,6 +388,7 @@ namespace myhelloworld
             // Print a message
             // Change the string length to make sure your code works properly
 
+            // CHECK THIS ONE!!
             //string s = "Coffeeeeeeeeeeeeee";
 
             //int sLength = s.Length;
@@ -397,6 +398,21 @@ namespace myhelloworld
             //{
             //    Console.WriteLine($"String: {s} is less than five and is odd or is greater than 10 and is even");
             //}
+
+            // NESTED CONDITIONALS
+            // Duplicate the logic above using nested conditionals
+            // Do not use any conditional operators when comparing values
+            
+            //if (sLength < 5)
+            //{
+            //    Console.WriteLine("The length is less than five");
+
+            //    if (isOddOrEven != 0)
+            //    {
+            //        Console.WriteLine("and is odd");
+            //    }
+            //}
+
             }
 
         }
