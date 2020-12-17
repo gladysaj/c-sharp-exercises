@@ -359,29 +359,45 @@ namespace myhelloworld
             // Write a switch statement that checks each value of the enum and does something for each match.
 
             // var food = Food.Mexican; // this is the one displayed
-            
+
             //switch (food)
             //{
             //    case Food.Chinese:
             //        Console.WriteLine("I like Chinese food");
             //        break;
 
-                // Include one case that falls through to the next case.
-                //case Food.Thai:
-                //case Food.Mexican:
-                //    Console.WriteLine("I love the Mexican food!");
-                //    break;
+            // Include one case that falls through to the next case.
+            //case Food.Thai:
+            //case Food.Mexican:
+            //    Console.WriteLine("I love the Mexican food!");
+            //    break;
 
-                //case Food.Thai:
-                //    Console.WriteLine("Loving Thai food");
-                //    break;
+            //case Food.Thai:
+            //    Console.WriteLine("Loving Thai food");
+            //    break;
 
-                //default:
-                //    Console.WriteLine("The food is invalid");
-                //    break;
+            //default:
+            //    Console.WriteLine("The food is invalid");
+            //    break;
 
+            // ORDER OF OPERATIONS 
+            // Create a string s and initialize it to whatever you like.
+            // Write code that does the following using conditional operators:
+            // If the string length is less than 5 and is odd OR
+            // If the string length is greater than or equal to 10 and is even
+            // Print a message
+            // Change the string length to make sure your code works properly
+
+            //string s = "Coffeeeeeeeeeeeeee";
+
+            //int sLength = s.Length;
+            //int isOddOrEven = s.Length % 2;
+
+            //if ((sLength < 5 && isOddOrEven != 0) || (sLength >= 10 && isOddOrEven == 0))
+            //{
+            //    Console.WriteLine($"String: {s} is less than five and is odd or is greater than 10 and is even");
+            //}
             }
 
         }
-    }
-}
+  }
