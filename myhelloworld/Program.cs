@@ -318,6 +318,34 @@ namespace myhelloworld
 
             // COMMAND LINE ARGUMENTS
             // Test the code above by passing in arguments directly on the command line
+
+
+            // PART II
+
+            // CONDITIONALS 
+
+            // IF/ ELSE 
+            // Create an int x and set it to 1
+            // Write an if/else if/else statement that will check if x is less than, 
+            // equal to, or greater than 100 and print an appropriate message for each case
+            // Change the value of x to cause each case to be triggered
+
+            //int x = 1;
+            //int y = 120;
+            //int z = 100;
+
+            //if (x < 100)
+            //{
+            //    Console.WriteLine($"Value {x} is less than 100");
+            //}
+            //if (z == 100)
+            //{
+            //    Console.WriteLine($"Value {z} is equal to 100");
+            //}
+            //if (y > 100)
+            //{
+            //    Console.WriteLine($"Value {y} is greater than 100");
+            //}
         }
     }
 }
