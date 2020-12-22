@@ -402,7 +402,7 @@ namespace myhelloworld
             // NESTED CONDITIONALS
             // Duplicate the logic above using nested conditionals
             // Do not use any conditional operators when comparing values
-            
+
             //if (sLength < 5)
             //{
             //    Console.WriteLine("The length is less than five");
@@ -413,7 +413,54 @@ namespace myhelloworld
             //    }
             //}
 
-            }
+            // LOOPS 
+
+            // While 
+            // Create an infinite while loop and run your program to see what happens
+            // for (int i = 1; i > 0; i++)
+            // {
+            //    Console.WriteLine("I will run forever");
+            // }
+            // Create a string s and initialize it to “0123456789”
+            // Use a while loop to print every odd digit in the string, all on the same line.
+
+            // CHECK THIS ONE!!
+            //string s = "0123456789";
+            //int parsedString = int.Parse(s); // Change to an int
+            //                                 // Access to every number 
+            //Console.WriteLine(parsedString);
+
+            //while (parsedString >= 0) // testing
+            //{
+            //    if (parsedString % 2 != 0)
+            //    {
+            //        Console.WriteLine($"Printing odds: {parsedString}");
+            //    }
+            //    parsedString++;
+            //}
+
+
+            // DO WHILE 
+            // Duplicate the above logic using a Do While loop
+
+            // FOR
+            // Duplicate the above logic using a for loop
+
+            // FOREACH
+            // Duplicate the above logic using a foreach loop
+
+            // NESTED LOOPS
+            // Imagine you have a hat with 5 different numbers in it. You take out numbers, one at a time, without putting them back.
+            // Write code that prints out every possible combination of numbers you can get, in all the different orders you can get them. Use any type of loops you want.
+
+            // LOOP FLOW CONTROL 
+            // Declare a string s and initialize it to whatever you want.
+            // Make sure the first character in your string is repeated somewhere else in the string
+            // Write a loop that searches through the string and looks for another occurrence of the first character found.
+            // If the character found doesn’t match the first one, the loop should immediately go to the next letter
+            // If the character found matches, print the index of the match, and immediately exit the loop.
 
         }
+
+    }
   }
