@@ -6,7 +6,7 @@ namespace myhelloworld
     /// This is an XML documentation comment
     /// This class performs an important function
     /// </summary>
-    
+
     // ENUM 
     //enum Sports
     //{
@@ -16,12 +16,12 @@ namespace myhelloworld
     //    Soccer = 20
     //}
 
-    enum Food
-    {
-        Chinese,
-        Mexican,
-        Thai
-    }
+    //enum Food
+    //{
+    //    Chinese,
+    //    Mexican,
+    //    Thai
+    //}
 
     // STRUCTS
     //public struct Books
@@ -424,34 +424,38 @@ namespace myhelloworld
             // Create a string s and initialize it to “0123456789”
             // Use a while loop to print every odd digit in the string, all on the same line.
 
-            // CHECK THIS ONE!!
             //string s = "0123456789";
-            //int parsedString = int.Parse(s); // Change to an int
-            //                                 // Access to every number 
-            //Console.WriteLine(parsedString);
+            //int counter = 0;
 
-            //while (parsedString >= 0) // testing
+            //Console.WriteLine(s.Length);
+
+            //while (counter != s.Length)
             //{
-            //    if (parsedString % 2 != 0)
+            //    if (s[counter] % 2 != 0)
             //    {
-            //        Console.WriteLine($"Printing odds: {parsedString}");
+            //        Console.WriteLine($"Printing odds: {s[counter]}");
             //    }
-            //    parsedString++;
+            //    counter++;
             //}
-
 
             // DO WHILE 
             // Duplicate the above logic using a Do While loop
 
+
             // FOR
             // Duplicate the above logic using a for loop
+
 
             // FOREACH
             // Duplicate the above logic using a foreach loop
 
+
+
             // NESTED LOOPS
             // Imagine you have a hat with 5 different numbers in it. You take out numbers, one at a time, without putting them back.
             // Write code that prints out every possible combination of numbers you can get, in all the different orders you can get them. Use any type of loops you want.
+            //int[] hat = {12, 93, 11, 3, 10};
+
 
             // LOOP FLOW CONTROL 
             // Declare a string s and initialize it to whatever you want.
@@ -460,7 +464,27 @@ namespace myhelloworld
             // If the character found doesn’t match the first one, the loop should immediately go to the next letter
             // If the character found matches, print the index of the match, and immediately exit the loop.
 
-        }
+            // ARRAYS
+            // SINGLE DIMENSIONAL ARRAYS
 
+            // Create an int array of size 10. Use a while loop to fill the array with the numbers 1 through 10.
+            int[] array1 = new int[10];
+            int count = 1;
+
+            while (count <= array1.Length)
+            {
+                Console.WriteLine(count++);
+            }
+
+            // Use a for loop to print the contents of the array in reverse order.
+            
+            // Write code that prints the sum of all numbers in the array
+
+
+            // Print the contents of the array without using a loop
+
+
+
+        }
     }
-  }
+}
