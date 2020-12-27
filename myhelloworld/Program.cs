@@ -45,6 +45,13 @@ namespace myhelloworld
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Greeting("Gladys");
+            string fullName = GetFullName("Gladys", "Alvarez", "gladyscodes");
+            Console.WriteLine(fullName);
+            int[] array2 = { 10, 10, 10 };
+            Console.WriteLine(string.Join(", ", array2));
+            UpdateArray(array2, 2, 200);
+            Console.WriteLine(string.Join(", ", array2));
 
             // Single line comment test
             /* Multi line 
@@ -468,23 +475,124 @@ namespace myhelloworld
             // SINGLE DIMENSIONAL ARRAYS
 
             // Create an int array of size 10. Use a while loop to fill the array with the numbers 1 through 10.
-            int[] array1 = new int[10];
-            int count = 1;
+            //int[] arr = new int[10];
 
-            while (count <= array1.Length)
-            {
-                Console.WriteLine(count++);
-            }
+            //int count = 1;
 
-            // Use a for loop to print the contents of the array in reverse order.
-            
-            // Write code that prints the sum of all numbers in the array
+            //while (count <= arr.Length)
+            //{
+            //    Console.WriteLine(count++);
+            //}
 
+            // Use a for loop to print the contents of the array in reverse order (IMPROVE THIS ONE!!)
+            //int[] array1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            //for (int i = array1.Length -1 ; i >= 0; i--)
+            //{
+            //    Console.WriteLine(array1[i]);
+            //}
+
+            // Write code that prints the sum of all numbers in the array (IMPROVE THIS ONE!!)
+            //int[] array2 = { 2, 4, 5, 6, 8, 9, 1 };
+
+            //int sum = 0;
+            //foreach (var num in array2)
+            //{
+            //    sum += num;
+            //    Console.WriteLine($"Total is: {sum}");
+            //}
 
             // Print the contents of the array without using a loop
+            //string arrayContent = string.Join(",", array2);
+            //Console.WriteLine(arrayContent);
+
+            // MULTI-DIMENSIONAL ARRAYS
+            // Create a 2D int array of any size 
+            // Use any loop(s) to store the product of the two indices in each element
+            // For example, the element at[2, 3] should be set to 6
+            // Print the contents of the array using a foreach loop
+            var array2D = new int[4, 4];
+            int rows = array2D.GetLength(0);
+            int col = array2D.GetLength(1);
+
+            for (int x = 0; x < rows; x++)
+            {
+                for (int y = 0; y < col; y++)
+                {
+                    int value = array2D[x, y] = x * y;
+                }
+            }
+
+            foreach (var item in array2D)
+            {
+                Console.WriteLine(item);
+            }
+        }
 
 
+        // FUNCTIONS
+        // BASIC FUNCTIONS
+
+        // Write a function that prints out whatever string you pass into it.Call the function to make sure it works
+        private static void Greeting(string name)
+        {
+            Console.WriteLine(name);
+        }
+
+        // Write a function that concatenates three strings and returns the result. Call the function to make sure it works.
+        private static string GetFullName(string firstName, string lastName, string alias)
+        {
+            return $"{firstName} {lastName} alias {alias}";
+        }
+
+        // Write a function that takes in an int array, an int index, and an int value. 
+        // The function should update the array at the specified index with the specified value.
+        // If the index is out of range, the function should do nothing.Call the function to make sure it works.
+        private static void UpdateArray(int[] array, int index, int value)
+        {
+            if (index < array.Length)
+            {
+                array[index] = value;
+            }
+            //try
+            //{
+            //    array[index] = value;
+            //} catch (System.IndexOutOfRangeException)
+            //{
+            //    return;
+            //}
+        }
+
+        // Write a function that takes in a string and returns a new string that contains every other word 
+        // (starting from the first) in the original.
+        // Call the function to make sure it works.
+        // For example, passing in “to be or not to be” should return “to or to”
+        private static string UpdateString(string s)
+        {
 
         }
+
+
+        // Write a function that takes in a string, an optional int parameter called index, and an optional int parameter called length.
+        // The function should return a substring of the original string starting at the specified index, with the specified length.Call the function to make sure it works.
+        // If the index or length are out of range, the function should return an empty string.
+        // If the index is not specified, start at index 0
+        // If the length is not specified(or is 0), take the rest of the string
+
+        // REFERENCE TYPE EQUALITY
+        
+        // Write a function called AreArraysEqual that returns bool.The function should take in two int arrays and return whether they contain the same elements, in the same order.Call the function to make sure it works.
+        // The function should return immediately as soon detects a mismatch
+
+        // OUTPUT PARAMETERS
+
+        // Write a function that returns void with two int input parameters.The function should have four output parameters that should return the sum, difference, product, and quotient of the two inputs. Call the function to make sure it works.
+
+        // REFERENCE PARAMETERS
+
+        // Write a function that takes in a string and a reference to an int.The function should return the character at the index specified by the int.
+        // If the int is negative, the first character should be returned and the int should be changed to 0.
+        // If the int is larger than the string length, the last character should be returned and the int should be changed to the last index in the string.
+
+    
     }
 }
