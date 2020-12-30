@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Xml;
 
 namespace myhelloworld
 {
@@ -44,14 +46,80 @@ namespace myhelloworld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Greeting("Gladys");
-            string fullName = GetFullName("Gladys", "Alvarez", "gladyscodes");
-            Console.WriteLine(fullName);
-            int[] array2 = { 10, 10, 10 };
-            Console.WriteLine(string.Join(", ", array2));
-            UpdateArray(array2, 2, 200);
-            Console.WriteLine(string.Join(", ", array2));
+            // READING TEXT FILES 
+            // 1. Create a text file anywhere on your computer and fill it with a few lines of text
+            // 2. Read the file using any function in the System.IO.File class and print the file contents
+            // string filePath = @"c:\Users\xgla\Desktop\fileio.txt";
+            // string fileContents = File.ReadAllText(filePath);
+            // Console.WriteLine(fileContents);
+
+            // 3. Repeat step 2 using the System.IO.StreamReader class
+            // a. Make sure to use a “using” block
+            // using (var reader = new StreamReader(filePath))
+            //{
+            //    while (!reader.EndOfStream)
+            //    {
+            //        var line = reader.ReadLine();
+            //        Console.WriteLine(line);
+            //    }
+            //}
+
+            // WRITING TEXT FILES
+            // 1. Write to a text file using any function in the System.IO.File class. Open the file in notepad to verify the results.
+            /*var overwriteText = "Hello World I'm a leaper!! ";*/ // this works but is overwriting the file contents
+                                                                   //File.WriteAllText(filePath, overwriteText);
+
+            // 2. Repeat step 1 but append to the file instead of overwriting it.Open the file in notepad to verify the results.
+            //var appendText = "I know how to append text to a file";
+            //File.AppendAllText(filePath, appendText);
+
+            //Console.WriteLine(fileContents);
+
+            // 3. Repeat step 2 using the System.IO.StreamWriter class. Open the file in notepad to verify the results.
+            // a.Make sure to use a “using” block
+            //string block = "TEST";
+            //bool append = true;
+
+            //using (var swc = new StreamWriter(filePath, append))
+            //{
+            //    swc.WriteLine(block);
+            //}
+
+            // XML FILES -------------------------------------------------------------------------------------------
+
+            // 2. Read this XML file into memory using any function in the System.XML namespace. 
+            // Use structs to store the information for each user, and use an array to store all the users. 
+            // Print out the user information to ensure your code works.
+
+            // 3.Make some changes to the users in memory(for example, change the last name of the first user
+            // or add a city to the second user’s address)
+
+            // 4.Write these new users out to xml using any function in the System.XML namespace.Write to a different file,
+            // do not overwrite the existing one.Open the file in a text editor to make sure your changes were saved correctly.
+
+
+            Console.WriteLine("Hi Microsoft!");
+
+
+            //Greeting("Gladys");
+            //string fullName = GetFullName("Gladys", "Alvarez", "gladyscodes");
+            //Console.WriteLine(fullName);
+            //int[] array2 = { 10, 10, 10 };
+            //Console.WriteLine(string.Join(", ", array2));
+            //UpdateArray(array2, 2, 200);
+            //Console.WriteLine(string.Join(", ", array2));
+            //string test = CheckLength("Gladys", 3);
+            //Console.WriteLine(test);
+
+            // AreArraysEqual();
+
+            // Algorithms
+           bool isRepeated = IsFirstCharRepeated("enrique");
+           Console.WriteLine($"Char checked is repeated: {isRepeated}");
+
+           string reversingString = ReverseString("Gladys&Enrique");
+           Console.WriteLine($"String reversed: {reversingString}");
+
 
             // Single line comment test
             /* Multi line 
@@ -488,7 +556,7 @@ namespace myhelloworld
             //int[] array1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
             //for (int i = array1.Length -1 ; i >= 0; i--)
             //{
-            //    Console.WriteLine(array1[i]);
+            //    Console.Write(array1[i]);
             //}
 
             // Write code that prints the sum of all numbers in the array (IMPROVE THIS ONE!!)
@@ -528,7 +596,6 @@ namespace myhelloworld
             }
         }
 
-
         // FUNCTIONS
         // BASIC FUNCTIONS
 
@@ -566,26 +633,57 @@ namespace myhelloworld
         // (starting from the first) in the original.
         // Call the function to make sure it works.
         // For example, passing in “to be or not to be” should return “to or to”
-        private static string UpdateString(string s)
-        {
 
-        }
+        // CHECK THIS ONE!!
+        //private static string UpdateString(string s)
+        //{
+
+        //}
 
 
-        // Write a function that takes in a string, an optional int parameter called index, and an optional int parameter called length.
-        // The function should return a substring of the original string starting at the specified index, with the specified length.Call the function to make sure it works.
+        // Write a function that takes in a string, an optional int parameter called index, 
+        // and an optional int parameter called length.
+        // The function should return a substring of the original string starting at the specified index, 
+        // with the specified length.Call the function to make sure it works.
         // If the index or length are out of range, the function should return an empty string.
         // If the index is not specified, start at index 0
         // If the length is not specified(or is 0), take the rest of the string
 
+        // CHECK THIS ONE!!
+        //private static string CheckLength(string s, int index = 0, int length = 0)
+        //{
+        //    if (index > s.Length || length > s.Length)
+        //    {
+        //        return "";
+        //    }
+
+        //    int len = length;
+        //    if (length == 0)
+        //    {
+        //        len = s.Length - 1;
+        //    }
+
+        //    string result = s.Substring(index, len);
+        //    return result;
+        //}
+
         // REFERENCE TYPE EQUALITY
-        
-        // Write a function called AreArraysEqual that returns bool.The function should take in two int arrays and return whether they contain the same elements, in the same order.Call the function to make sure it works.
+
+        // Write a function called AreArraysEqual that returns bool.The function should take in two int arrays and return whether
+        // they contain the same elements, in the same order.Call the function to make sure it works.
         // The function should return immediately as soon detects a mismatch
+
+        // CHECKKKKKKK DUMB
+        //private static bool AreArraysEqual(int[] array1, int[] array2)
+        //{
+        //    if (array1 == array2)
+        //    return true;
+        //}
 
         // OUTPUT PARAMETERS
 
-        // Write a function that returns void with two int input parameters.The function should have four output parameters that should return the sum, difference, product, and quotient of the two inputs. Call the function to make sure it works.
+        // Write a function that returns void with two int input parameters.The function should have four output parameters
+        // that should return the sum, difference, product, and quotient of the two inputs. Call the function to make sure it works.
 
         // REFERENCE PARAMETERS
 
@@ -593,6 +691,95 @@ namespace myhelloworld
         // If the int is negative, the first character should be returned and the int should be changed to 0.
         // If the int is larger than the string length, the last character should be returned and the int should be changed to the last index in the string.
 
-    
+        // ------------------------------------------------------------------------------------------------------------------
+        // ALGORITHMS EXERCISES
+        // ------------------------------------------------------------------------------------------------------------------
+
+        // Brute force (linear search)
+        // Write a function called IsFirstCharRepeated that takes in a string and returns a bool.
+        // The function should return true if the first character is repeated anywhere else in the string
+        // Write a unit test and test this function
+
+        private static bool IsFirstCharRepeated(string s)
+        {
+
+            char firstChar = s[0];
+            bool repeated = false;
+            int loop = 0;
+
+            foreach (var item in s)
+            {
+                if (loop != 0)
+                {
+                    if (item == firstChar)
+                    {
+                        repeated = true;
+                    }
+                }
+
+                loop += 1;
+            }
+
+            return repeated;
+        }
+
+        // RECURSION
+        // 1 Write a function called ReverseString that takes in a string and returns a string. 
+        // The function should return the string passed in, but in reverse.The function should solve the problem using iteration.
+
+        private static string ReverseString(string st)
+        {
+            char[] array = st.ToCharArray();
+            Array.Reverse(array);
+            return new string(array);
+        }
+       
+
+        // 2. Write a unit test and test this function.
+
+        // 3. Solve the same problem using recursion and test it again.
+
+        // 4. Write a function called GetSumBetweenNumbers that takes in an int min and an int max and returns an int.
+        // The function should get the sum of all the numbers between (and including) min and max. 
+        // The function should solve the problem using iteration.
+        // If min > max, the function should return 0
+
+        // 5. Write a unit test and test this function.
+
+        // 6. Solve the same problem using recursion and test it again.
+
+        // 7. Write a function called XToTheYPower that takes in an int x and an int y, and returns int.
+        // The function should return x^y.Solve this using iteration, don’t use Math.Pow()
+
+        // 8. Write a unit test and test this function.
+
+        // 9. Solve the same problem using recursion and test it again.
+
+
+
+        // DIVIDE AND CONQUER
+
+        // 1. Write a function called MultiplyList that takes in a List<int>.It should return the product of all numbers in the list.
+        // Solve this problem using iteration.
+
+        // 2. Write a unit test and test this function.
+
+        // 3. Solve the same problem using a recursive divide-and-conquer algorithm and test it again.
+
+        // GREEDY
+
+        // 1. Write a function called FillRoomWithBoxes that takes in an int called roomSize, a List<int> called possibleSizes, 
+        // and a List<int> called boxes.
+        // a.The possibleSizes list should contain all possible box sizes.You can assume this list is sorted in descending order.
+
+        // 2. The function should implement a greedy recursive algorithm to fill the room as full as it can get with the
+        // least number of boxes, and should store the size of each box used in the boxes list, one entry per box
+        // a.For example, if your possible sizes list contained 7, 3, 1, and your roomSize was 25, 
+        // the boxes list should contain 7, 7, 7, 3, 1 when your function exits
+
+        // 3. Write a unit test and test this function
+
+       
+
     }
 }
