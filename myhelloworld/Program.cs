@@ -120,6 +120,12 @@ namespace myhelloworld
            string reversingString = ReverseString("Gladys&Enrique");
            Console.WriteLine($"String reversed: {reversingString}");
 
+            string recReversingString = RecReverseString("glad");
+            Console.WriteLine($"String using recursion: {recReversingString}");
+
+            int sum = GetSumBetweenNumbers(5, 8);
+            Console.WriteLine($"Total sum: {sum}");
+
 
             // Single line comment test
             /* Multi line 
@@ -726,32 +732,55 @@ namespace myhelloworld
         // RECURSION
         // 1 Write a function called ReverseString that takes in a string and returns a string. 
         // The function should return the string passed in, but in reverse.The function should solve the problem using iteration.
-
+        // 2. Write a unit test and test this function.
         private static string ReverseString(string st)
         {
             char[] array = st.ToCharArray();
             Array.Reverse(array);
             return new string(array);
         }
-       
-
-        // 2. Write a unit test and test this function.
 
         // 3. Solve the same problem using recursion and test it again.
+        private static string RecReverseString(string str)
+        {
+            if (str.Length <= 1)
+                return str;
+            else
+            return RecReverseString(str.Substring(1)) + str[0];      
+        }
 
         // 4. Write a function called GetSumBetweenNumbers that takes in an int min and an int max and returns an int.
         // The function should get the sum of all the numbers between (and including) min and max. 
         // The function should solve the problem using iteration.
         // If min > max, the function should return 0
+        // Write a unit test and test this function.
+        private static int GetSumBetweenNumbers(int min, int max)
+        {
 
-        // 5. Write a unit test and test this function.
+            
+            //int sum = 0;
+            //for (int x = 0; x == min; ++)
+            //{
+            //    for (int y = 0; y == max; y++)
+            //    {
+            //        sum += x;
+            //        Console.WriteLine(x);
+            //        if (min > max)
+            //            return 0;
+            //    }
+            //}
+        }
+
 
         // 6. Solve the same problem using recursion and test it again.
 
+
+
         // 7. Write a function called XToTheYPower that takes in an int x and an int y, and returns int.
         // The function should return x^y.Solve this using iteration, don’t use Math.Pow()
+        // Write a unit test and test this function.
 
-        // 8. Write a unit test and test this function.
+
 
         // 9. Solve the same problem using recursion and test it again.
 
